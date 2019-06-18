@@ -15,7 +15,7 @@ RUN apt-get update \
 
 ##############################################################################################
 # Install arangodb client tools:
-RUN wget https://download.arangodb.com/arangodb31/xUbuntu_16.04/Release.key \
+RUN wget https://download.arangodb.com/arangodb34/DEBIAN/Release.key \
     && apt-key add - < Release.key \
     && echo 'deb https://download.arangodb.com/arangodb31/xUbuntu_16.04/ /' | tee /etc/apt/sources.list.d/arangodb.list \
     && apt-get install apt-transport-https \
